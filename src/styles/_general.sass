@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Comfortaa:wght@300;600&family=Poiret+One&display=swap')
+
+$red: #F14C38
+$light: #eef2f3
+$white: #ffffff
+$dark:  #144955
+
+
+$main-font: 'Comfortaa', cursive
+$main-font2: 'Poiret One', cursive
+$title-font: 'Amatic SC', cursive
+
+html
+  scroll-behavior: smooth
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+p 
+  line-height: 150%
+a 
+  text-decoration: none
+  transition: .3s
+  &:focus
+    outline: none
+a, p
+  color: $dark
+  font-size: 100%
+
+button
+  cursor: pointer
+  transition: .3s
+  &:focus
+      outline: none
+  
+.fade-enter-active, .fade-leave-active 
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to 
+  opacity: 0
