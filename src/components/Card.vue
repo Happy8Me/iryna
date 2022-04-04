@@ -1,7 +1,7 @@
 <template>
     <a :href="link" target="_blank" >
         <h4> {{ name }} </h4>
-        <img :src="pic" alt="photo">
+        <!-- <img :src="pic" alt="photo"> -->
         <p> {{ text }} </p>
         <p> {{ additionalText }} </p>
     </a>
@@ -40,5 +40,7 @@ export default {
         p:last-child
             font-size: 80%
             text-align: justify
+        h4 
+            margin-bottom: 10px
 
 </style>

@@ -37,6 +37,7 @@
       <div>
         <Card v-for="work in works" :key="work.name" :name="work.name" :pic="work.pic" :text="work.text" :link="work.link" :additionalText="work.additionalText" />
       </div>  
+      <p>The source code for the apps above can be found <a href="https://github.com/Happy8Me" target="_black">here</a> </p>
     </div>
 
     <div id="edu">
@@ -54,7 +55,7 @@
           <p class="additionalEdu">Certificates & CV</p>
           <div>
             <a v-for="(certificate, index) in certificates" :key="certificate.name"  @click="showModal(index)" >{{ certificate.name }}</a>
-            <a href="https://drive.google.com/file/d/1o2Zwk1agDk3g9xauwP6XgMnTY5jmWSLb/view?usp=sharing" target="_blank"> CV </a>
+            <a href="https://docs.google.com/document/d/1uzJFj4dx8H3dHvVbBlPubMsAeoPaQPLpkIt6oOxe7QQ/edit?usp=sharing" target="_blank"> CV </a>
           </div>
             <Modal v-if="openModal" :pic="certificates[picIndex].pic" />
         </div>
@@ -186,6 +187,10 @@ p
     display: flex
     flex-wrap: wrap
     justify-content: center
+  p a 
+    color: $red
+    &:hover 
+      color: $dark
 #edu 
   .itEdu, .otherEdu 
     p 
